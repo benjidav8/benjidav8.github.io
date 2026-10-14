@@ -81,7 +81,27 @@ a{color:inherit}
 @media (max-width:860px){.nav .inner{gap:12px}.navlinks{gap:12px}.navlinks a{font-size:12.5px}
   .btn.sm{padding:9px 16px;font-size:12.5px}}
 @media (max-width:900px) and (min-width:801px){.brand .ln{display:none}}
-@media (max-width:800px){.navlinks{display:none}}
+/* The desktop links become a compact dropdown on phones. */
+.mobile-menu{display:none}
+@media (max-width:800px){
+  .navlinks{display:none}
+  .nav .inner>.btn.sm{margin-left:auto}
+  .mobile-menu{display:block;position:relative;margin-left:auto}
+  .mobile-menu summary{display:flex;align-items:center;gap:7px;min-height:44px;
+    padding:0 10px;cursor:pointer;list-style:none;font-size:13px;font-weight:600;color:var(--ink)}
+  .mobile-menu summary::-webkit-details-marker{display:none}
+  .mobile-menu summary::after{content:"▾";font-size:12px}
+  .mobile-menu[open] summary::after{content:"▴"}
+  .mobile-menu-links{position:fixed;top:64px;left:18px;right:18px;width:auto;
+    max-width:none;padding:8px;background:var(--paper);
+    border:1px solid var(--rule);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+  .mobile-menu-links a{display:flex;align-items:center;min-height:44px;padding:8px 12px;
+    text-decoration:none;font-size:14px;font-weight:500;color:var(--ink);border-radius:6px}
+  .mobile-menu-links a:hover,.mobile-menu-links a:focus-visible{background:rgba(0,0,0,.06)}
+  .mobile-menu~.btn.sm{margin-left:0!important}
+}
+@media (max-width:380px){.nav .inner{gap:6px}.nav .inner>.btn.sm{padding:9px 12px}
+  .mobile-menu summary{padding:0 6px}}
 
 /* ---------- dark hero ---------- */
 .hero-band{padding:96px 0 100px;color:rgba(243,237,224,.85);background-color:#272320;
@@ -431,10 +451,23 @@ a.ptitle:hover{color:var(--accent);border-bottom-color:var(--accent)}
       <a href="#work">Teaching &amp; Consulting</a>
       <a href="#sessions">Speaking Topics</a>
       <a href="#pd">Workshops</a>
-<a href="/scholar-in-residence/">Scholar in Residence</a>
+<a href="/scholar-in-residence/">Israel Trips</a>
       <a href="#scholarship">Scholarship</a>
       <a href="#where">Partners</a>
     </div>
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <div class="mobile-menu-links">
+      <a href="#about">About</a>
+      <a href="#work">Teaching &amp; Consulting</a>
+      <a href="#sessions">Speaking Topics</a>
+      <a href="#pd">Workshops</a>
+<a href="/scholar-in-residence/">Israel Trips</a>
+      <a href="#scholarship">Scholarship</a>
+      <a href="#where">Partners</a>
+
+      </div>
+    </details>
     <a class="btn sm" href="mailto:benjidav@gmail.com?subject=Inquiry">Get in touch</a>
   </div>
 </nav>
@@ -924,5 +957,13 @@ a.ptitle:hover{color:var(--accent);border-bottom-color:var(--accent)}
 })();
 </script>
 
+<script>
+document.querySelectorAll('.mobile-menu-links a').forEach(function(link){
+  link.addEventListener('click',function(){this.closest('details').removeAttribute('open')});
+});
+document.addEventListener('keydown',function(event){
+  if(event.key==='Escape') document.querySelector('.mobile-menu').removeAttribute('open');
+});
+</script>
 </body>
 </html>
