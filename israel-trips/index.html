@@ -222,10 +222,10 @@ footer a{color:var(--ink-3)}
 .hero .creds-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px 28px}
 .hero .cred{background:none;border:0;border-left:2px solid rgba(255,255,255,.35);border-radius:0;padding:2px 0 2px 12px;gap:2px;height:auto}
 .hero .cred-icon{display:none}
-.hero .cred-org{order:1;margin-top:0;padding-top:0;font-size:14px;line-height:1.25}
-.hero .cred-role{order:2;font-size:12.5px;line-height:1.35}
-.hero .cred-org a,.hero .cred-role a{border-bottom:0}
-.hero .cred-org a:hover,.hero .cred-role a:hover{text-decoration:underline}
+.hero .cred-role{order:1;font-size:12.5px;line-height:1.35}
+.hero .cred-org{order:2;margin-top:0;padding-top:0;font-size:14px;line-height:1.25}
+.hero .cred-org a,.hero .cred-role a{border-bottom:0;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.55)}
+.hero .cred-org a:hover,.hero .cred-role a:hover{text-decoration-color:#FFFFFF}
 @media (max-width:820px){
   .hero .creds-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px}
 }
