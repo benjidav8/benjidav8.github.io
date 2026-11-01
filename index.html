@@ -159,10 +159,11 @@ a{color:inherit}
 /* ---------- hero facts ---------- */
 .hero-facts{grid-column:1/-1;margin-top:44px;padding-top:36px;
   border-top:1px solid rgba(243,237,224,.18);
-  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+  display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:40px}
 .hf-lbl{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
   color:rgba(243,237,224,.45);margin-bottom:16px}
-.hf-roles,.hf-plain{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:15px}
+.hf-plain{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:15px}
+.hf-roles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px}
 .hf-roles li{display:flex;flex-direction:column;gap:2px;padding-left:14px;
   border-left:2px solid #9A3B2E}
 .hf-roles b{font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:600;
@@ -176,6 +177,7 @@ a{color:inherit}
   border-radius:50%;background:#C69749}
 .hf-plain em{font-style:italic;color:rgba(243,237,224,.85)}
 @media (max-width:820px){.hero-facts{grid-template-columns:1fr;gap:30px;margin-top:34px}}
+@media (max-width:520px){.hf-roles{grid-template-columns:1fr}}
 
 /* ---------- about ---------- */
 .card{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:26px}
