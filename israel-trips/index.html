@@ -146,9 +146,12 @@ section.sand{background:var(--sand)}
 .briefing-row{grid-column:1 / -1;display:grid;grid-template-columns:1.5fr 1fr;gap:18px;align-items:stretch}
 .briefing-photo{width:100%;height:100%;min-height:260px;object-fit:cover;object-position:center 25%;border-radius:16px;display:block}
 
-.hero-creds{margin-top:34px}
+.hero-creds{margin-top:34px;padding-top:28px;border-top:1px solid rgba(255,255,255,.25)}
 .hero-creds .hero-creds-head{color:#F6DCD3;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
-.hero .cred{border-color:rgba(255,255,255,.35)}
+.hero .cred{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28)}
+.hero .cred-icon{background:rgba(255,255,255,.16);color:#FBEDE8}
+.hero .cred-role{color:#F6DCD3}
+.hero .cred-org{color:#FFFFFF}
 
 .contact .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .contact .name{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700}
@@ -205,11 +208,6 @@ footer a{color:var(--ink-3)}
         <div class="cred-org">Yeshiva University's Azrieli Graduate School</div>
       </div>
       <div class="cred">
-        <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5c3 0 5.5 2 5.5 5"/></svg></div>
-        <div class="cred-role">Director of Education</div>
-        <div class="cred-org">Center for Jewish Peoplehood Education</div>
-      </div>
-      <div class="cred">
         <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20L12 4l9 16"/><path d="M12 10l5 10"/><path d="M2 20h20"/></svg></div>
         <div class="cred-role">Head of Israel Education</div>
         <div class="cred-org">Camp Yavneh</div>
@@ -228,6 +226,11 @@ footer a{color:var(--ink-3)}
         <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M8.5 14.5a6 6 0 117 0c-.8.7-1.5 1.5-1.5 3.5h-4c0-2-.7-2.8-1.5-3.5z"/></svg></div>
         <div class="cred-role">Fellow, Reimagining Israel Education initiative</div>
         <div class="cred-org">The Jewish Education Project</div>
+      </div>
+      <div class="cred">
+        <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2L6.3 15.8M13.2 7.2l4.5 8.6M7.5 18h9"/></svg></div>
+        <div class="cred-role">Board member and 2026 conference chair</div>
+        <div class="cred-org">Network for Research in Jewish Education</div>
       </div>
     </div>
   </div>
