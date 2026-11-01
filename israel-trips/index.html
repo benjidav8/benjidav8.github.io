@@ -189,6 +189,7 @@ footer a{color:var(--ink-3)}
 @media (max-width:480px){
   .formats{grid-template-columns:1fr}
   .creds-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .creds-grid .cred:last-child:nth-child(odd){grid-column:1 / -1;width:calc(50% - 5px);margin:0 auto}
   body{font-size:16px}
 }
 </style>
