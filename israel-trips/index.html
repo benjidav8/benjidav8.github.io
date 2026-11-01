@@ -164,6 +164,9 @@ section.sand{background:var(--sand)}
 .hero .cred{height:100%}
 .hero .cred-org{margin-top:auto;padding-top:6px}
 
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.group-head,#why{scroll-margin-top:16px}
+
 .contact .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .contact .name{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700}
 .contact .name span{display:block;font-family:'Inter',sans-serif;font-size:15px;font-weight:400;color:var(--ink-3)}
@@ -251,6 +254,11 @@ footer a{color:var(--ink-3)}
         <div class="cred-org">Center for Jewish Peoplehood Education</div>
       </div>
     </div>
+    <div class="hero-btns">
+      <a class="btn btn-light" href="#why">Why Dr. Davis</a>
+      <a class="btn btn-ghost" href="#seminars">Seminars</a>
+      <a class="btn btn-ghost" href="#briefing">Briefings</a>
+    </div>
   </div>
 </header>
 
@@ -285,7 +293,7 @@ footer a{color:var(--ink-3)}
       <img src="../img/img_booking.25196295.jpg" alt="Dr. Benji Davis teaching a Masa Israel group in Jerusalem">
     </div>
 
-    <h3 class="group-head">Seminars</h3>
+    <h3 class="group-head" id="seminars">Seminars</h3>
     <div class="sessions">
 
       <article class="session">
@@ -326,7 +334,7 @@ footer a{color:var(--ink-3)}
 
       <p class="grid-note">All of these sessions are drawn from my scholarship. These workshops have been given at national conferences, yom limmuds, professional development workshops, and synagogue events.</p>
 
-      <h3 class="group-head" style="grid-column:1 / -1;margin-top:18px">Briefing</h3>
+      <h3 class="group-head" id="briefing" style="grid-column:1 / -1;margin-top:18px">Briefing</h3>
       <div class="briefing-row">
       <article class="session feature">
         <h3>Israel Update: What's Up With Israel Today</h3>
