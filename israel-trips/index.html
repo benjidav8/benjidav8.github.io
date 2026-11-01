@@ -146,6 +146,10 @@ section.sand{background:var(--sand)}
 .briefing-row{grid-column:1 / -1;display:grid;grid-template-columns:1.5fr 1fr;gap:18px;align-items:stretch}
 .briefing-photo{width:100%;height:100%;min-height:260px;object-fit:cover;object-position:center 25%;border-radius:16px;display:block}
 
+.hero-creds{margin-top:34px}
+.hero-creds .hero-creds-head{color:#F6DCD3;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.hero .cred{border-color:rgba(255,255,255,.35)}
+
 .contact .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .contact .name{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700}
 .contact .name span{display:block;font-family:'Inter',sans-serif;font-size:15px;font-weight:400;color:var(--ink-3)}
@@ -192,11 +196,8 @@ footer a{color:var(--ink-3)}
     </div>
     <img src="../img/img_headshot.241bfe32.jpg" alt="Dr. Benji Davis">
   </div>
-</header>
-
-<section id="why" style="padding-top:44px">
-  <div class="wrap">
-    <h3 class="colhead">Credentials</h3>
+  <div class="wrap hero-creds">
+    <h3 class="colhead hero-creds-head">Credentials</h3>
     <div class="creds-grid">
       <div class="cred">
         <div class="cred-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg></div>
@@ -229,7 +230,12 @@ footer a{color:var(--ink-3)}
         <div class="cred-org">The Jewish Education Project</div>
       </div>
     </div>
-    <div class="why2" style="margin-top:36px">
+  </div>
+</header>
+
+<section id="why" style="padding-top:44px">
+  <div class="wrap">
+    <div class="why2">
       <div>
         <h3 class="colhead">Why Dr. Davis</h3>
         <p>Dr. Davis is a professor based in Jerusalem whose expertise is teaching about Israel. He researches and publishes on how to do it well, and he does the teaching himself, with learners from eight years old to doctoral students, and with educators, professionals, community members and lay leaders across the religious and political spectrum.</p>
