@@ -172,6 +172,14 @@ section.sand{background:var(--sand)}
 .hero-nav a{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;color:#F6DCD3;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:2px}
 .hero-nav a:hover{color:#FFFFFF;border-bottom-color:#FFFFFF}
 
+.hero-fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.hero-fig figcaption{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:500;color:#FFFFFF;text-align:center}
+@media (max-width:820px){
+  .hero .wrap.hero-top{flex-direction:column;align-items:center;text-align:center;gap:12px}
+  .hero-nav{justify-content:center}
+  .hero-fig figcaption{font-size:14px}
+}
+
 .contact .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 .contact .name{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700}
 .contact .name span{display:block;font-family:'Inter',sans-serif;font-size:15px;font-weight:400;color:var(--ink-3)}
@@ -227,9 +235,11 @@ footer a{color:var(--ink-3)}
   <div class="wrap">
     <div>
       <h1>Scholar-Educator for Israel Trips</h1>
-      <p class="sub">with Dr. Benji Davis</p>
     </div>
-    <img src="../img/img_headshot.241bfe32.jpg" alt="Dr. Benji Davis">
+    <figure class="hero-fig">
+      <img src="../img/img_headshot.241bfe32.jpg" alt="Dr. Benji Davis">
+      <figcaption>Dr. Benji Davis</figcaption>
+    </figure>
   </div>
   <div class="wrap hero-creds">
     <div class="creds-grid">
