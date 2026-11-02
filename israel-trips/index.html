@@ -256,6 +256,17 @@ footer a{color:var(--ink-3)}
 
 .why-lead{margin:0 0 34px;max-width:860px;font-size:19px;line-height:1.6;color:var(--ink-2)}
 @media (max-width:480px){.why-lead{font-size:16.5px;margin-bottom:26px}}
+
+.bio-row{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;margin:0 0 34px}
+.bio-row .why-lead{margin:0}
+.bio-fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.bio-fig img{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;border:4px solid var(--blush)}
+.bio-fig figcaption{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;color:var(--ink);text-align:center}
+@media (max-width:600px){
+  .bio-row{grid-template-columns:96px 1fr;gap:16px;align-items:start}
+  .bio-fig img{width:96px;height:96px;border-width:3px}
+  .bio-fig figcaption{font-size:12.5px}
+}
 </style>
 </head>
 <body>
@@ -279,16 +290,18 @@ footer a{color:var(--ink-3)}
     <div>
       <h1>Scholar-Educator for Israel Trips</h1>
     </div>
-    <figure class="hero-fig">
-      <img src="../img/img_headshot.241bfe32.jpg" alt="Dr. Benji Davis">
-      <figcaption>Dr. Benji Davis</figcaption>
-    </figure>
   </div>
 </header>
 
 <section id="why" style="padding-top:44px">
   <div class="wrap">
-    <p class="why-lead">Dr. Davis is a professor based in Jerusalem whose expertise is teaching about Israel. He researches and publishes on how to do it well, and he does the teaching himself, with learners from eight years old to doctoral students, and with educators, professionals, community members and lay leaders across the religious and political spectrum.</p>
+    <div class="bio-row">
+      <figure class="bio-fig">
+        <img src="../img/img_headshot.241bfe32.jpg" alt="Dr. Benji Davis">
+        <figcaption>Dr. Benji Davis</figcaption>
+      </figure>
+      <p class="why-lead">Dr. Davis is a professor based in Jerusalem whose expertise is teaching about Israel. He researches and publishes on how to do it well, and he does the teaching himself, with learners from eight years old to doctoral students, and with educators, professionals, community members and lay leaders across the religious and political spectrum.</p>
+    </div>
     <div class="why2">
       <div>
         <h3 class="colhead">Credentials</h3>
